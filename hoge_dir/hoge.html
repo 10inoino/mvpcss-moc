@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>moc-title</title>
+    <!-- mvp.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="../base.css">
+
+    <!--marked.js読み込み-->  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="../base.js"></script>
+    <script src="memo.md"></script>
+    <script>
+
+        // mdファイルを読み込んで表示
+        (function () {
+            window.onload = function(){
+                markdownMemo.innerHTML = marked(doc);
+            };
+        }());
+
+        // その他必要なJSの処理を記載
+
+    </script>
+
+    <style>
+        /* ページごとで必要なCSSを記載 */
+    </style>
+  </head>
+  <body>
+      <header>
+        <h1>moc-h1</h1>
+      </header>
+      <main>
+        <!-- 必要なHTMLを記載 -->
+          <table>
+            <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Role</th>
+                </tr>
+            </thead>
+            <tr>
+              <td>1</td>
+              <td>matty</td>
+              <td>24</td>
+              <td>Engeneer</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>james</td>
+              <td>30</td>
+              <td>Sales</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Chris</td>
+              <td>45</td>
+              <td>HR</td>
+            </tr>
+        </table>
+        <hr>
+        <h1>Markdown Memo</h1>
+        <div id="markdownMemo"></div>
+      </main>
+  </body>
+</html>

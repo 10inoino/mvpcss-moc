@@ -1,0 +1,9 @@
+.d-none {
+  display: none;
+}
+
+hr {
+  height: 5px;
+  background-color:#747474;
+  border: none;
+}
